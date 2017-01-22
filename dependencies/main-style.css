@@ -99,3 +99,8 @@ body
 	display:block;
 	margin:auto;
 }
+#Rvanster{
+	float:left;
+	height:2.3rem;
+	width:2.3rem;
+}
