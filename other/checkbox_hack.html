@@ -46,7 +46,16 @@
 			}
 			#content
 			{
+				
+			}
+			.container
+			{
 				padding:1rem;
+			}
+			.inverted
+			{
+				color:white;
+				background:black;
 			}
 			ul
 			{
@@ -72,26 +81,33 @@
 			{
 				color:white;
 				float:left;
-				display:inline-block;
+
+				height:100%
+			}
+			#org-image
+			{
+				float:left;
+				height:2.3rem;
+				width:2.3rem;
+				margin:0.5rem;
+				background-image: url('../resources/images/logga-white.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			#org-name
+			{
+				float:left;
+			}
+			#logga-knapp
+			{
+				display:block;
 			}
 			#list
 			{
 				overflow:auto;
 			}
-			@media only screen and (min-width: 768px)
+			@media only screen and (min-width: 820px)
 			{
-				h1
-				{
-					font-size:3rem;
-				}
-				h2
-				{
-					font-size:2em;
-				}
-				p
-				{
-					font-size:1.5em;
-				}
 				.nav-font
 				{
 					font-size:2rem;
@@ -117,6 +133,12 @@
 				{
 					background:#ac1c25;
 				}
+				#org-image
+				{
+					height:3.5rem;
+					width:3.5rem;
+					margin:0.5rem;
+				}
 			}
 			footer
 			{
@@ -132,8 +154,13 @@
 		<header>
 			<div id="header">
 			<label id="toggle-menu" for="menu-check-input" class="nav-font">MENU</label>
+			<div id="logga">
+				<a id="logga-knapp">
+					<div id="org-image"></div>
+					<div id="org-name"><strong class="nav-font">Rosendalsgymnasiet</strong></div>
+				</a>
+			</div>
 			
-			<div id="logga"><strong><a  class="nav-font">Rosendalsgymnasiet</a></strong></div>
 			<input type="checkbox" id="menu-check-input"></input>
 				<nav id="navigation">
 					<ul id="list">
@@ -145,18 +172,28 @@
 			</div>
 		</header>
 		<section id="content">
-			<h1>Skolan</h1>
-			<p><strong>Hösten 2005 startade vi Rosendalsgymnasiet i Läkemedelsverkets tidigare lokaler. Skolan är från början planerad och utrustad för att ge så goda förutsättningar som möjligt för ett kreativt arbetssätt.</strong></p>
-			<h2>Om skolan</h2>
-			<p>Arbetssätt som gynnar våra elevers måluppfyllelse och på bästa sätt förbereder dem för vidare studier. Vi erbjuder Naturvetenskapsprogrammet, Samhällsvetenskapsprogrammet och Språkintroduktion. Läs mer om Rosendal och våra program i vår presentationssfolder. Du hittar den här.</p>
-			<h2>Vår pedagogiska vision</h2>
-			<p>Via länken till höger kan du ta del av vår pedagogiska grundsyn: Tio teser. Där formulerar vi hur vi ser på varandra som medarbetare och elever och hur vi tänker kring lärande. Du hittar den här För oss är det viktigt att hela tiden utvecklas som professionell organisation men framförallt är det trivseln och lusten för lärande som är vår viktigaste plattform! Vår viktigaste resurs är våra elever och vi själva som personal. Många av våra pedagoger är också prisbelönta.</p>
-			<h2>Flexibla grupper och schemalösningar</h2>
-			<p>Att alltid arbeta i 32-grupper tror vi inte är optimalt. Vi grupperar istället våra elever i klasser om 20 elever som en del av sin tid arbetar i 40-grupp, enskilt eller i andra gruppstorlekar. Härigenom skapar vi goda förutsättningar för elever och lärare att mötas med hög kvalitet och variation. Längre fördjupningar eller ämnesövergripande projekt underlättas av vårt tisdagsschema som utgörs av sammanhängande block om en halv eller en hel dag. Våra lokaler och vår digitala miljö understödjer detta arbete.</p>
-			<h2>Universitetskontakter</h2>
-			<p>Rosendalsgymnasiet ligger strategiskt beläget på Campusområdet, med två universitet i den omedelbara närheten. Några av våra lärare är rekryterade från Uppsala universitet där de fortfarande har kvar delar av sin tjänst.</p>
-			<h2>Rutiner och arbetsplaner</h2>
-			<p>Om du är mer nyfiken på hur vi arbetar är du välkommen in på vårt intranät "Rosnet" och studera våra arbetsplaner och policydokument. Du hittar dem här.</p>
+			<section class="container inverted">
+				<h2 class="large">Vi gratulerar</h2>
+				<h3 class="large">Karolina Kalat tilldelas Uppsala kommuns pedagogiska pris.</h3>
+				<p class="large">Ur motiveringen:<br></br>
+					<q>bar en unik talang för att skapa glädje och lust att lära hos sina elever</q>
+				</p>
+				
+			</section>
+			<section class="container">
+				<h2>Skolan</h2>
+				<p><strong>Hösten 2005 startade vi Rosendalsgymnasiet i Läkemedelsverkets tidigare lokaler. Skolan är från början planerad och utrustad för att ge så goda förutsättningar som möjligt för ett kreativt arbetssätt.</strong></p>
+				<h3>Om skolan</h3>
+				<p>Arbetssätt som gynnar våra elevers måluppfyllelse och på bästa sätt förbereder dem för vidare studier. Vi erbjuder Naturvetenskapsprogrammet, Samhällsvetenskapsprogrammet och Språkintroduktion. Läs mer om Rosendal och våra program i vår presentationssfolder. Du hittar den här.</p>
+				<h3>Vår pedagogiska vision</h3>
+				<p>Via länken till höger kan du ta del av vår pedagogiska grundsyn: Tio teser. Där formulerar vi hur vi ser på varandra som medarbetare och elever och hur vi tänker kring lärande. Du hittar den här För oss är det viktigt att hela tiden utvecklas som professionell organisation men framförallt är det trivseln och lusten för lärande som är vår viktigaste plattform! Vår viktigaste resurs är våra elever och vi själva som personal. Många av våra pedagoger är också prisbelönta.</p>
+				<h3>Flexibla grupper och schemalösningar</h3>
+				<p>Att alltid arbeta i 32-grupper tror vi inte är optimalt. Vi grupperar istället våra elever i klasser om 20 elever som en del av sin tid arbetar i 40-grupp, enskilt eller i andra gruppstorlekar. Härigenom skapar vi goda förutsättningar för elever och lärare att mötas med hög kvalitet och variation. Längre fördjupningar eller ämnesövergripande projekt underlättas av vårt tisdagsschema som utgörs av sammanhängande block om en halv eller en hel dag. Våra lokaler och vår digitala miljö understödjer detta arbete.</p>
+				<h3>Universitetskontakter</h3>
+				<p>Rosendalsgymnasiet ligger strategiskt beläget på Campusområdet, med två universitet i den omedelbara närheten. Några av våra lärare är rekryterade från Uppsala universitet där de fortfarande har kvar delar av sin tjänst.</p>
+				<h3>Rutiner och arbetsplaner</h3>
+				<p>Om du är mer nyfiken på hur vi arbetar är du välkommen in på vårt intranät "Rosnet" och studera våra arbetsplaner och policydokument. Du hittar dem här.</p>
+			</section>
 		</section>
 		<footer>
 			<hr></hr>
