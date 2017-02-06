@@ -33,10 +33,13 @@ function switchPage(page_name)
 
 function newHash()
 {
-	url_page = window.location.hash.substr(1);
-	switchPage(url_page);
+	fragment = window.location.hash.substr(1);
+	if (fragment == '')
+	{
+		fragment = 'start';
+	}
+	switchPage(fragment);
 }
 
-window.onhashchange = newHash;
-
 newHash(); // loading the page specified in the hash
+window.onhashchange = newHash; // listening for hash changes
