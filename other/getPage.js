@@ -31,12 +31,12 @@ function switchPage(page_name)
 	}
 }
 
-function hashChanged()
+function newHash()
 {
 	url_page = window.location.hash.substr(1);
 	switchPage(url_page);
 }
 
-window.onhashchange = hashChanged;
+window.onhashchange = newHash;
 
-hashChanged(); // loading the page specified in the hash
+newHash(); // loading the page specified in the hash
