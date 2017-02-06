@@ -1,4 +1,5 @@
 var Pages = {} // object to hold all the pages
+Pages['active'] = '';
 
 function loadPage(page_name)
 {
@@ -19,15 +20,19 @@ function loadPage(page_name)
 
 function switchPage(page_name)
 {
-	if (typeof Pages[page_name] != 'undefined')
+	if (Pages['active'] != page_name)
 	{
-		document.getElementById("content").innerHTML = Pages[page_name]['content'];
-		document.getElementById("menu-check-input").checked = false; // remove the menu
-		window.location.hash = page_name; // update the url
-	}
-	else
-	{
-		loadPage(page_name);
+		if (typeof Pages[page_name] != 'undefined')
+		{
+			document.getElementById("content").innerHTML = Pages[page_name]['content'];
+			document.getElementById("menu-check-input").checked = false; // remove the menu
+			window.location.hash = page_name; // update the url
+			Pages['active'] = page_name;
+		}
+		else
+		{
+			loadPage(page_name);
+		}
 	}
 }
 
@@ -40,6 +45,7 @@ function newHash()
 	}
 	switchPage(fragment);
 }
+
 
 newHash(); // loading the page specified in the hash
 window.onhashchange = newHash; // listening for hash changes
