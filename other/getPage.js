@@ -20,7 +20,7 @@ function loadPage(page_name)
 
 function switchPage(page_name)
 {
-	if (Pages['active'] != page_name)
+	if (Pages['active'] != page_name) // is the requested page the same as the current page
 	{
 		if (typeof Pages[page_name] != 'undefined')
 		{
