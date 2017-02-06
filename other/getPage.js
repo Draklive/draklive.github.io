@@ -31,5 +31,12 @@ function switchPage(page_name)
 	}
 }
 
-url_page = window.location.hash.substr(1);
-switchPage(url_page); // loading the page specified in the hash
+function hashChanged()
+{
+	url_page = window.location.hash.substr(1);
+	switchPage(url_page);
+}
+
+window.onhashchange = hashChanged;
+
+hashChanged(); // loading the page specified in the hash
