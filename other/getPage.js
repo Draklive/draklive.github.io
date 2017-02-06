@@ -41,7 +41,7 @@ function newHash()
 	fragment = window.location.hash.substr(1);
 	if (fragment == '')
 	{
-		fragment = 'start';
+		fragment = 'start'; // this will be the default page if no fragment is specified
 	}
 	switchPage(fragment);
 }
