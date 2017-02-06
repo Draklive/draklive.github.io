@@ -23,6 +23,7 @@ function switchPage(page_name)
 	{
 		document.getElementById("content").innerHTML = Pages[page_name]['content'];
 		document.getElementById("menu-check-input").checked = false; // remove the menu
+		window.location.hash = page_name; // update the url
 	}
 	else
 	{
@@ -30,4 +31,5 @@ function switchPage(page_name)
 	}
 }
 
-switchPage('start'); // loading the startpage as soon as the sript is run
+url_page = window.location.hash.substr(1);
+switchPage(url_page); // loading the page specified in the hash
