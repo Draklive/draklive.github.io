@@ -204,10 +204,8 @@
 		</header>
 		<section id="content">
 			<?php 
-			echo 'Hello ' . htmlspecialchars($_GET["name"]) . '!';
 			$filepath = "pages/" . htmlspecialchars($_GET["name"]) . ".html";
 			readfile($filepath);
-			
 			?>
 		</section>
 		<footer>
