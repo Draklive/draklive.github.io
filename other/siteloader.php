@@ -123,6 +123,7 @@
 			}
 			#start
 			{
+				color:white;
 				display:block;
 			}
 			#list
@@ -186,7 +187,7 @@
 				</div>
 			</label>
 			<div id="logga">
-				<a id="start" onclick="loadPage('start')">
+				<a id="start" href="start" onclick="loadPage('start')">
 					<div id="org-image"></div>
 					<div id="org-name"><strong class="nav-font">Rosendalsgymnasiet</strong></div>
 				</a>
@@ -195,8 +196,8 @@
 			<input type="checkbox" id="menu-check-input"></input>
 				<nav id="navigation">
 					<ul id="list">
-						<li class="list-item"><a class="nav-font" id="skolan" onclick="switchPage('skolan')">Skolan</a></li>
-						<li class="list-item"><a class="nav-font" id="program" onclick="switchPage('program')">Program</a></li>
+						<li class="list-item"><a class="nav-font" id="skolan" href="skolan" onclick="switchPage('skolan')">Skolan</a></li>
+						<li class="list-item"><a class="nav-font" id="program" href="program" onclick="switchPage('program')">Program</a></li>
 						<li class="list-item"><a class="nav-font" id="rosnet" href="http://rosnet.rosendalsgymnasiet.se">Rosnet</a></li>
 					</ul>
 				</nav>
