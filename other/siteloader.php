@@ -102,7 +102,6 @@
 			}
 			#logga
 			{
-				color:white;
 				float:left;
 
 				height:100%
