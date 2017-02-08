@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Test</title>
+		<link rel="icon" type="image/png" href="resources/images/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<style>
+			body
+			{
+				margin:0;
+				background:white;
+			}
+			.nav-font
+			{
+				font-size:1.4rem;
+				padding:0.8rem;
+				display:block;
+				font-family: "Segoe UI", Arial, sans-serif;
+			}
+			#header
+			{
+				background:#9c1c25;
+				width:100%;
+				overflow: auto;
+			}
+			#navigation
+			{
+				color:white;
+				display:none;
+				text-align:center;
+			}
+			input[type=checkbox]:checked ~ #navigation
+			{
+				display:block;
+			}
+			#menu-check-input
+			{
+				display:none;
+			}
+			#toggle-menu
+			{
+				float:right;
+				color:white;
+				text-align:center;
+				display:block;
+				width:1.8rem;
+				height:1.8rem;
+			}
+			#toggle-menu:hover
+			{
+				background:#ac1c25;
+			}
+			#content
+			{
+				
+			}
+			.container
+			{
+				padding:1rem;
+			}
+			.inverted
+			{
+				color:white;
+				background:black;
+			}
+			.large > h2
+			{
+				font-size:2.5rem;
+			}
+			.large > h3
+			{
+				font-size:1.5rem;
+			}
+			.large > p
+			{
+				font-size:1.5rem;
+			}
+			ul
+			{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
+			li a
+			{
+				color:white;
+				text-decoration: none;
+			}
+			li a:hover
+			{
+				background:#555555;
+			}
+			li
+			{
+				background:#404040;
+			}
+			#logga:hover
+			{
+				background:#ac1c25;
+			}
+			#logga
+			{
+				color:white;
+				float:left;
+
+				height:100%
+			}
+			#org-image
+			{
+				float:left;
+				height:2.3rem;
+				width:2.3rem;
+				margin:0.5rem;
+				background-image: url('../resources/images/logga-white.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+			#org-name
+			{
+				float:left;
+			}
+			#start
+			{
+				display:block;
+			}
+			#list
+			{
+				overflow:auto;
+			}
+			@media only screen and (min-width: 820px)
+			{
+				.nav-font
+				{
+					font-size:2rem;
+					padding:1rem;
+				}
+				li
+				{
+					dosplay:inline-block;
+					background:transparent;
+					float:left;
+				}
+				#navigation
+				{
+					display:block;
+					overflow:auto;
+					float:right;
+				}
+				#toggle-menu
+				{
+					display:none;
+				}
+				li a:hover
+				{
+					background:#ac1c25;
+				}
+				#org-image
+				{
+					height:3.5rem;
+					width:3.5rem;
+					margin:0.5rem;
+				}
+			}
+			footer
+			{
+				text-align:center;
+			}
+			address
+			{
+				display:inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="header">
+			<label id="toggle-menu" for="menu-check-input" class="nav-font">
+				<div style="width 90%; height:90%">
+					<div style="height:22.2222%; background:white; border-radius:100px"></div>
+					<div style="height:22.2222%"></div>
+					<div style="height:22.2222%; background:white; border-radius:100px"></div>
+					<div style="height:22.2222%"></div>
+					<div style="height:22.2222%; background:white; border-radius:100px"></div>
+				</div>
+			</label>
+			<div id="logga">
+				<a id="start" onclick="loadPage('start')">
+					<div id="org-image"></div>
+					<div id="org-name"><strong class="nav-font">Rosendalsgymnasiet</strong></div>
+				</a>
+			</div>
+			
+			<input type="checkbox" id="menu-check-input"></input>
+				<nav id="navigation">
+					<ul id="list">
+						<li class="list-item"><a class="nav-font" id="skolan" onclick="switchPage('skolan')">Skolan</a></li>
+						<li class="list-item"><a class="nav-font" id="program" onclick="switchPage('program')">Program</a></li>
+						<li class="list-item"><a class="nav-font" id="rosnet" href="http://rosnet.rosendalsgymnasiet.se">Rosnet</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="content">
+			<?php 
+			echo 'Hello ' . htmlspecialchars($_GET["name"]) . '!';
+			$filepath = "pages/" . htmlspecialchars($_GET["name"]) . ".html";
+			readfile($filepath);
+			
+			?>
+		</section>
+		<footer>
+			<hr>
+			<address>
+				Rosendalsgymnasiet<br> 
+				Husargatan 8<br>
+				753 75 Uppsala<br>
+				018-727 33 30<br>
+			</address>
+		</footer>
+	<!-- <script src="getPage.js"></script> -->
+	</body>
+</html>
