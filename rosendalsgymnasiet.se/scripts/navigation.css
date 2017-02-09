@@ -11,6 +11,7 @@ body
 .nav-header
 {
 	display: block;
+	padding:0.5rem;
 	overflow: auto;
 }
 .nav-home-button
@@ -56,6 +57,7 @@ input[type=checkbox]:checked ~ .nav-main-list
 	display: block;
 	color: white;
 	font-family: "Segoe UI", Arial, sans-serif;
+	padding:0.5rem;
 	overflow:hidden;
 	text-align: center;
 	text-decoration: none;
@@ -101,6 +103,7 @@ input[type=checkbox]:checked ~ .nav-list
 	display: block;
 	color: white;
 	font-family: "Segoe UI", Arial, sans-serif;
+	padding:0.5rem;
 	text-align: center;
 	text-decoration: none;
 	background: #505050;
