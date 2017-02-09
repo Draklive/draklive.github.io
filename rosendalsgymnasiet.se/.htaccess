@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule    ^([A-Za-z0-9-]+)/?$    PHP/siteloader.php?name=$1    [NC,L]
+
+RewriteRule    ^$                     PHP/siteloader.php?name=      [L]
+
+ErrorDocument  401                    /Skola/draklive.github.io/rosendalsgymnasiet.se/Error/error404.html
+ErrorDocument  403                    /Skola/draklive.github.io/rosendalsgymnasiet.se/Error/error404.html
+ErrorDocument  404                    /Skola/draklive.github.io/rosendalsgymnasiet.se/Error/error404.html

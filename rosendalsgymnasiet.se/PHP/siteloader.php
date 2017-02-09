@@ -186,7 +186,7 @@
 				</div>
 			</label>
 			<div id="logga">
-				<a id="start" href="start" onclick="loadPage('start')">
+				<a id="start" href="." onclick="loadPage('start')">
 					<div id="org-image"></div>
 					<div id="org-name"><strong class="nav-font">Rosendalsgymnasiet</strong></div>
 				</a>
@@ -203,8 +203,16 @@
 			</div>
 		</header>
 		<section id="content">
-			<?php 
-			$filepath = "pages/" . htmlspecialchars($_GET["name"]) . ".html";
+			<?php
+			$page_directory = htmlspecialchars($_GET["name"]);
+			if(empty($page_directory))
+			{
+				$filepath = "../pages/start.html";
+			}
+			else
+			{
+				$filepath = "../pages/" . $page_directory . ".html";
+			}
 			readfile($filepath);
 			?>
 		</section>
@@ -217,6 +225,6 @@
 				018-727 33 30<br>
 			</address>
 		</footer>
-	<!-- <script src="getPage.js"></script> -->
+	<!-- <script src="../getPage.js"></script> -->
 	</body>
 </html>

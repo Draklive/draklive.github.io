@@ -1,2 +1,0 @@
-RewriteEngine On    # Turn on the rewriting engine
-RewriteRule    ^page/([A-Za-z0-9-]+)/?$    siteloader.php?name=$1    [NC,L]    # Process pages
