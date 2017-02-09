@@ -1,0 +1,171 @@
+body
+{
+	background-color:#ffffff;
+	margin: 0;
+}
+.nav-igation
+{
+	display: block;
+	background: #9c1c25;
+}
+.nav-header
+{
+	display: block;
+	overflow: auto;
+}
+.nav-home-button
+{
+	display: block;
+	float: left;
+	color: white;
+	font-family: "Segoe UI", Arial, sans-serif;
+	text-decoration: none;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-size: 3rem;
+}
+.nav-main-list-button
+{
+	display: block;
+	float: right;
+	border-radius: 0.5rem;
+	height: 4rem;
+	width: 4rem;
+}
+.nav-main-list-button:hover
+{
+	background: #ac2c35;
+}
+.nav-home-button:hover
+{
+	background: #ac2c35;
+}
+input[type=checkbox]:checked ~ .nav-main-list
+{
+	display: block;
+}
+.nav-main-list
+{
+	display: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.nav-main-item-button
+{
+	display: block;
+	color: white;
+	font-family: "Segoe UI", Arial, sans-serif;
+	overflow:hidden;
+	text-align: center;
+	text-decoration: none;
+	background: #303030;
+	font-size: 3rem;
+}
+.nav-main-item-button:hover
+{
+	background: #404040;
+}
+.nav-list-button
+{
+	display: block;
+	float:right;
+	border-radius: 0.5rem;
+	height: 4rem;
+	width: 4rem;
+}
+.nav-list-button:hover
+{
+	background: #252525;
+}
+.nav-list-check
+{
+	display: none;
+}
+input[type=checkbox]:checked ~ .nav-list
+{
+	display: block;
+}
+.nav-list
+{
+	display: none;
+	list-style-type: none;
+	padding: 0;
+}
+.nav-item
+{
+	display: block;
+}
+.nav-item-button
+{
+	display: block;
+	color: white;
+	font-family: "Segoe UI", Arial, sans-serif;
+	text-align: center;
+	text-decoration: none;
+	background: #505050;
+	font-size: 3rem;
+}
+.nav-item-button:hover
+{
+	background: #606060;
+}
+.nav-arrow-spacer
+{
+	height:10%;
+}
+.nav-arrow-container
+{
+	width:80%;
+	height:80%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.nav-arrow-TL
+{
+	height:16%;
+	width:73%;
+	position: relative;
+	margin:0 auto;
+	top: 21%;
+	right:21%;
+	background:white;
+	border-radius:100px;
+	transform: rotate(45deg);
+}
+.nav-arrow-TR
+{
+	height:16%;
+	width:73%;
+	position: relative;
+	margin:0 auto;
+	top: 5%;
+	left:21%;
+	background:white;
+	border-radius:100px;
+	transform: rotate(-45deg);
+}
+.nav-arrow-BL
+{
+	height:16%;
+	width:73%;
+	position: relative;
+	margin:0 auto;
+	top: 31%;
+	right:21%;
+	background:white;
+	border-radius:100px;
+	transform: rotate(45deg);
+}
+.nav-arrow-BR
+{
+	height:16%;
+	width:73%;
+	position: relative;
+	margin:0 auto;
+	top: 15%;
+	left:21%;
+	background:white;
+	border-radius:100px;
+	transform: rotate(-45deg);
+}
