@@ -27,17 +27,14 @@
 			#navigation
 			{
 				color:white;
+				display:none;
 				text-align:center;
 			}
-			input[type=checkbox]:checked ~ ul
+			input[type=checkbox]:checked ~ #navigation
 			{
-				display: block;
+				display:block;
 			}
-			.sub-list
-			{
-				display:none;
-			}
-			.checkbox-list
+			#menu-check-input
 			{
 				display:none;
 			}
@@ -53,6 +50,10 @@
 			#toggle-menu:hover
 			{
 				background:#ac1c25;
+			}
+			#content
+			{
+				
 			}
 			.container
 			{
@@ -81,7 +82,6 @@
 				margin: 0;
 				padding: 0;
 				width: 100%;
-				display:none;
 			}
 			li a
 			{
@@ -96,10 +96,6 @@
 			{
 				background:#404040;
 			}
-			.sub-list-item
-			{
-				background:#808080;
-			}
 			#logga:hover
 			{
 				background:#ac1c25;
@@ -107,7 +103,6 @@
 			#logga
 			{
 				float:left;
-
 				height:100%
 			}
 			#org-image
@@ -152,10 +147,6 @@
 					overflow:auto;
 					float:right;
 				}
-				ul
-				{
-					display:block;
-				}
 				#toggle-menu
 				{
 					display:none;
@@ -184,64 +175,34 @@
 	<body>
 		<header>
 			<div id="header">
-				<label id="toggle-menu" for="menu-check-input-0" class="nav-font">
-					<div style="width 90%; height:90%">
-						<div style="height:22.2222%; background:white; border-radius:100px"></div>
-						<div style="height:22.2222%"></div>
-						<div style="height:22.2222%; background:white; border-radius:100px"></div>
-						<div style="height:22.2222%"></div>
-						<div style="height:22.2222%; background:white; border-radius:100px"></div>
-					</div>
-				</label>
-				<div id="logga">
-					<a id="start" href="." onclick="loadPage('start')">
-						<div id="org-image"></div>
-						<div id="org-name"><strong class="nav-font">Rosendalsgymnasiet</strong></div>
-					</a>
+			<label id="toggle-menu" for="menu-check-input" class="nav-font">
+				<div style="width 90%; height:90%">
+					<div style="height:22.2222%; background:white; border-radius:100px"></div>
+					<div style="height:22.2222%"></div>
+					<div style="height:22.2222%; background:white; border-radius:100px"></div>
+					<div style="height:22.2222%"></div>
+					<div style="height:22.2222%; background:white; border-radius:100px"></div>
 				</div>
-				
+			</label>
+			<div id="logga">
+				<a id="start" href="." onclick="loadPage('start')">
+					<div id="org-image"></div>
+					<div id="org-name"><strong class="nav-font">Rosendalsgymnasiet</strong></div>
+				</a>
+			</div>
+			
+			<input type="checkbox" id="menu-check-input"></input>
 				<nav id="navigation">
-					<input class="checkbox-list" type="checkbox" id="menu-check-input-0"></input>
 					<ul id="list">
-						<li class="list-container">
-							<a class="list-item nav-font" id="skolan" href="skolan" onclick="switchPage('skolan')">Skolan</a>
-							<label for="menu-check-input-1" class="nav-font" style="">
-								<div style="min-height:100px;"></div>
-							</label>
-							<input class="checkbox-list" type="checkbox" id="menu-check-input-1"></input>
-							<ul class="sub-list">
-								<li class="sub-list-item"><a class="nav-font" id="skolan" href="sida1">sida1</a></li>
-								<li class="sub-list-item"><a class="nav-font" id="program" href="sida2">sida2</a></li>
-								<li class="sub-list-item"><a class="nav-font" id="rosnet" href="sida3">sida3</a></li>
-							</ul>
-						</li>
-						
-						<li class="list-container">
-							<a class="list-item nav-font" id="program" href="program" onclick="switchPage('program')">Program</a>
-							<input class="checkbox-list" type="checkbox" id="menu-check-input-2"></input>
-							<ul class="sub-list">
-								<li class="sub-list-item"><a class="nav-font" id="skolan" href="sida1">sida1</a></li>
-								<li class="sub-list-item"><a class="nav-font" id="program" href="sida2">sida2</a></li>
-								<li class="sub-list-item"><a class="nav-font" id="rosnet" href="sida3">sida3</a></li>
-							</ul>
-						</li>
-						
-						<li class="list-container">
-							<a class="list-item nav-font" id="rosnet" href="http://rosnet.rosendalsgymnasiet.se">Rosnet</a>
-							<input class="checkbox-list" type="checkbox" id="menu-check-input-3"></input>
-							<ul class="sub-list">
-								<li class="sub-list-item"><a class="nav-font" id="skolan" href="sida1">sida1</a></li>
-								<li class="sub-list-item"><a class="nav-font" id="program" href="sida2">sida2</a></li>
-								<li class="sub-list-item"><a class="nav-font" id="rosnet" href="sida3">sida3</a></li>
-							</ul>
-						</li>
+						<li class="list-item"><a class="nav-font" id="skolan" href="skolan" onclick="switchPage('skolan')">Skolan</a></li>
+						<li class="list-item"><a class="nav-font" id="program" href="program" onclick="switchPage('program')">Program</a></li>
+						<li class="list-item"><a class="nav-font" id="rosnet" href="http://rosnet.rosendalsgymnasiet.se">Rosnet</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<section id="content">
 			<?php
-			/*
 			$page_directory = htmlspecialchars($_GET["name"]);
 			if(empty($page_directory))
 			{
@@ -252,7 +213,6 @@
 				$filepath = "../pages/" . $page_directory . ".html";
 			}
 			readfile($filepath);
-			*/
 			?>
 		</section>
 		<footer>
