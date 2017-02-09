@@ -103,7 +103,6 @@
 			#logga
 			{
 				float:left;
-
 				height:100%
 			}
 			#org-image
