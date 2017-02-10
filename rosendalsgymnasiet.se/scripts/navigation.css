@@ -43,6 +43,11 @@ body
 {
 	background: #ac2c35;
 }
+.nav-main-text
+{
+	display: inline-block;
+	padding:0.5rem;
+}
 input[type=checkbox]:checked ~ .nav-main-list
 {
 	display: block;
@@ -59,7 +64,6 @@ input[type=checkbox]:checked ~ .nav-main-list
 	display: block;
 	color: white;
 	font-family: "Segoe UI", Arial, sans-serif;
-	padding:0.5rem;
 	overflow:hidden;
 	text-align: center;
 	text-decoration: none;
@@ -74,6 +78,7 @@ input[type=checkbox]:checked ~ .nav-main-list
 {
 	display: block;
 	float:right;
+	padding:0.5rem;
 	border-radius: 0.5rem;
 	height: 2rem;
 	width: 2rem;
