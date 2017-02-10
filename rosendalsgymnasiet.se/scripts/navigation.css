@@ -3,6 +3,16 @@ body
 	background-color:#ffffff;
 	margin: 0;
 }
+.nav-igation, .nav-header, .nav-home-button, .nav-main-list-button, .nav-main-text, .nav-main-list, .nav-main-item-button, .nav-list-button, .nav-list, .nav-item, .nav-item-button, .nav-arrow-spacer, .nav-arrow-container, .nav-arrow-TL, .nav-arrow-TR, .nav-arrow-BL, .nav-arrow-BR
+{
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                       supported by Chrome and Opera */
+}
 .nav-igation
 {
 	display: block;
@@ -37,7 +47,7 @@ body
 }
 .nav-main-list-button:hover
 {
-	background: #ac2c35;
+	background: #8c1c25;
 }
 .nav-home-button:hover
 {
