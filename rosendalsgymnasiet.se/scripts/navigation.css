@@ -134,12 +134,12 @@ input[type=checkbox]:checked ~ .nav-list
 }
 .nav-arrow-spacer
 {
-	height:10%;
+	height:25%;
 }
 .nav-arrow-container
 {
-	width:80%;
-	height:80%;
+	width:50%;
+	height:50%;
 	margin: 0 auto;
 	overflow: hidden;
 }
