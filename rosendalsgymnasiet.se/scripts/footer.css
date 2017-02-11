@@ -7,3 +7,76 @@ body
 {
 	background: #9c1c25;
 }
+.foo-container
+{
+	max-width: 70rem;
+	margin: 0 auto;
+	overflow: auto;
+	text-align: center;
+}
+.foo-adress
+{
+	color: white;
+	margin: 0 auto;
+	padding: 1.5rem;
+	font-family: "Segoe UI", Arial, sans-serif;
+}
+.foo-name-social-bar
+{
+	padding: 1rem;
+	text-align: center;
+	display: block;
+}
+.foo-logo-name
+{
+	display: block;
+}
+.foo-logo
+{
+	display: inline-block;
+	margin: -0.25rem;
+	padding-right: 0.5rem;
+	height: 2rem;
+	width: 2rem;
+}
+.foo-header
+{
+	color: white;
+	font-size: 1.5rem;
+	display:inline-block;
+	padding-bottom: 1rem;
+	font-family: "Segoe UI", Arial, sans-serif;
+	text-align: center;
+	margin: 0;
+}
+.foo-imagebar
+{
+	display: inline-block;
+	text-align: center;
+}
+.foo-social-image
+{
+	width: 3rem;
+	height: 3rem;
+}
+.foo-social-image-spacer
+{
+	display: inline-block;
+	height: 100%;
+	width: 2rem;
+}
+@media only screen and (min-width: 530px)
+{
+	.foo-container
+	{
+		text-align: left;
+	}
+	.foo-adress
+	{
+		float: right;
+	}
+	.foo-name-social-bar
+	{
+		display: inline-block;
+	}
+}

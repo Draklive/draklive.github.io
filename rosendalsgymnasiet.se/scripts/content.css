@@ -1,0 +1,15 @@
+.con-container
+{
+	max-width: 70rem;
+	margin: 0 auto;
+}
+.con-page
+{
+	margin:1rem;
+	background: #ffffff;
+	min-height: 30rem;
+}
+.con-display-area
+{
+	padding: 1rem;
+}
