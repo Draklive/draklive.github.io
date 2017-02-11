@@ -192,3 +192,63 @@ input[type=checkbox]:checked ~ .nav-list
 	border-radius:100px;
 	transform: rotate(-45deg);
 }
+@media only screen and (min-width: 900px)
+{
+	.nav-igation
+	{
+		height:3rem;
+	}
+	.nav-header
+	{
+		float:left;
+	}
+	.nav-main-list-button
+	{
+		display: none;
+	}
+	.nav-main-list
+	{
+		display: block;
+		float: right;
+	}
+	.nav-main-item
+	{
+		float: right;
+		position: relative;
+	}
+	.nav-main-item-button
+	{
+		background: transparent;
+	}
+	.nav-list
+	{
+		position: absolute;
+		overflow: hidden;
+		border-bottom-left-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+		width:100%;
+	}
+	.nav-main-item-button
+	{
+		border-radius: 0.5rem;
+	}
+	.nav-list-button:hover
+	{
+		background: #8c1c25;
+	}
+	.nav-main-item-button:hover
+	{
+		background: #ac2c35;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
