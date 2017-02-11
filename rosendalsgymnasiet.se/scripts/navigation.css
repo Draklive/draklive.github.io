@@ -1,6 +1,7 @@
 body
 {
 	background-color:#ffffff;
+	min-width: 16rem;
 	margin: 0;
 }
 .nav-igation, .nav-header, .nav-home-button, .nav-main-list-button, .nav-main-text, .nav-main-list, .nav-main-item-button, .nav-list-button, .nav-list, .nav-item, .nav-item-button, .nav-arrow-spacer, .nav-arrow-container, .nav-arrow-TL, .nav-arrow-TR, .nav-arrow-BL, .nav-arrow-BR
@@ -19,6 +20,11 @@ body
 {
 	display: block;
 	background: #9c1c25;
+}
+.nav-container
+{
+	max-width: 70rem;
+	margin: 0 auto;
 }
 .nav-header
 {
