@@ -85,11 +85,6 @@ input[type=checkbox]:checked ~ .nav-main-list
 	margin: 0;
 	padding: 0;
 }
-input[type=checkbox]:checked ~ .nav-main-item-button
-{
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-}
 .nav-main-item-button
 {
 	display: block;
@@ -110,6 +105,7 @@ input[type=checkbox]:checked ~ .nav-main-item-button
 	display: block;
 	float:right;
 	padding:0.5rem;
+	border-radius: 0.5rem;
 	height: 2rem;
 	width: 2rem;
 }
@@ -244,6 +240,11 @@ input[type=checkbox]:checked ~ .nav-list
 		border-bottom-left-radius: 0.5rem;
 		border-bottom-right-radius: 0.5rem;
 		width:100%;
+	}
+	input[type=checkbox]:checked ~ .nav-main-item-button, input[type=checkbox]:checked ~ .nav-main-item-button .nav-list-button
+	{
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
 	}
 	.nav-main-item-button
 	{
