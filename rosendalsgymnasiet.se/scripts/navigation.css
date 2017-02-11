@@ -213,7 +213,7 @@ input[type=checkbox]:checked ~ .nav-list
 	}
 	.nav-main-item
 	{
-		float: right;
+		float: left;
 		position: relative;
 	}
 	.nav-main-item-button
