@@ -167,7 +167,11 @@ input[type=checkbox]:checked ~ .nav-list
 	right:21%;
 	background:white;
 	border-radius:100px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
+	
+	
 }
 .nav-arrow-TR
 {
@@ -179,6 +183,8 @@ input[type=checkbox]:checked ~ .nav-list
 	left:21%;
 	background:white;
 	border-radius:100px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 .nav-arrow-BL
@@ -191,6 +197,8 @@ input[type=checkbox]:checked ~ .nav-list
 	right:21%;
 	background:white;
 	border-radius:100px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
 .nav-arrow-BR
@@ -203,6 +211,8 @@ input[type=checkbox]:checked ~ .nav-list
 	left:21%;
 	background:white;
 	border-radius:100px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
 @media only screen and (min-width: 990px)
