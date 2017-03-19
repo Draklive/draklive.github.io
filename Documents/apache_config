@@ -1,0 +1,39 @@
+Create a new document in the "/etc/apache2/sites-available" directory containing the folowing or simmilar:
+
+<VirtualHost *:80>
+        #Set base URL
+        ServerName new-rosendalsgymnasiet.se
+
+        #Set adminstrator email and server root
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/draklive.github.io/public_html
+
+        #Enable the rewrite engine to rewrite URL:s
+        RewriteEngine On
+        RewriteRule ^/hem$                                      /navigation.php?directory=start&name=start      [L]
+        RewriteRule ^/hem/([A-Za-z0-9-]+)$                      /navigation.php?directory=$1&name=$1            [L]
+        RewriteRule ^/hem/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)$      /navigation.php?directory=$1&name=$2            [L]
+
+        #Log errors
+        LogLevel alert rewrite:trace4
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+
+
+
+Run "a2ensite rosendalssida.conf" To enable the specified host(in this case rosendalssida.conf)
+
+Run "a2dissite 000-default.conf" to dissable the specified virtual host(in this case the default host)
+
+Run "apache2ctl configtest" to verify the config file syntax
+
+Run "service apache2 restart" to restart the server
+
+
+
+
+Apache error log can be found in "/var/log/apache2"
+
+Hosts document is located at "/etc/hosts"

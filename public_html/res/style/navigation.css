@@ -215,7 +215,7 @@ input[type=checkbox]:checked ~ .nav-list
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
-@media only screen and (min-width: 990px)
+@media only screen and (min-width: 69rem)
 {
 	.nav-igation
 	{
@@ -246,10 +246,11 @@ input[type=checkbox]:checked ~ .nav-list
 	.nav-list
 	{
 		position: absolute;
+		right: 0;
 		overflow: hidden;
 		border-bottom-left-radius: 0.5rem;
 		border-bottom-right-radius: 0.5rem;
-		width:100%;
+		min-width:100%;
 	}
 	input[type=checkbox]:checked ~ .nav-main-item-button, input[type=checkbox]:checked ~ .nav-main-item-button .nav-list-button
 	{
