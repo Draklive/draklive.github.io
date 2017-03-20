@@ -105,10 +105,10 @@ input[type=checkbox]:checked ~ .nav-main-list
 {
 	display: block;
 	float:right;
-	padding:0.5rem;
+	padding:0.75rem;
 	border-radius: 0.5rem;
-	height: 2rem;
-	width: 2rem;
+	height: 1.5rem;
+	width: 1.5rem;
 }
 .nav-list-button:hover
 {
@@ -160,7 +160,7 @@ input[type=checkbox]:checked ~ .nav-list
 }
 .nav-arrow-TL
 {
-	height:16%;
+	height:17%;
 	width:73%;
 	position: relative;
 	margin:0 auto;
@@ -176,7 +176,7 @@ input[type=checkbox]:checked ~ .nav-list
 }
 .nav-arrow-TR
 {
-	height:16%;
+	height:17%;
 	width:73%;
 	position: relative;
 	margin:0 auto;
@@ -190,7 +190,7 @@ input[type=checkbox]:checked ~ .nav-list
 }
 .nav-arrow-BL
 {
-	height:16%;
+	height:17%;
 	width:73%;
 	position: relative;
 	margin:0 auto;
@@ -204,7 +204,7 @@ input[type=checkbox]:checked ~ .nav-list
 }
 .nav-arrow-BR
 {
-	height:16%;
+	height:17%;
 	width:73%;
 	position: relative;
 	margin:0 auto;
