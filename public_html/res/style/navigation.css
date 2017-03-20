@@ -2,6 +2,7 @@ body
 {
 	background-color:#f5f5f5;
 	min-width: 24rem;
+	font-size: 1rem;
 	margin: 0;
 }
 [class|=nav]
@@ -124,6 +125,7 @@ input[type=checkbox]:checked ~ .nav-list
 .nav-list
 {
 	display: none;
+	font-size: 1.2rem;
 	list-style-type: none;
 	padding: 0;
 }
@@ -140,7 +142,6 @@ input[type=checkbox]:checked ~ .nav-list
 	text-align: center;
 	text-decoration: none;
 	background: #505050;
-	font-size: 1.5rem;
 }
 .nav-item-button:hover
 {

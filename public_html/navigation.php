@@ -188,5 +188,6 @@
 				</address>
 			</div>
 		</footer>
+		<script src="/res/script/navigation.js"></script>
     </body>
 </html>
