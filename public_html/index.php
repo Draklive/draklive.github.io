@@ -1,3 +1,3 @@
 <?php
-    header("Location: http://new-rosendalsgymnasiet.se/hem");
+    header("Location: http://rosendalsgymnasiet.hexeye.se/hem");
 die();
