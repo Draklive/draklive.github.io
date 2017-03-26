@@ -4,11 +4,17 @@
         menyer[i].addEventListener('change', function(){closeOthers(this.index)}.bind({index:i}), false);
     }
     function closeOthers(selected) {
-        for(var j = 0; j < menyer.length; j++) {
-            if(j != selected) {
-            menyer[j].checked = false;
+        if(selected != 0) {
+            for(var j = 0; j < menyer.length; j++) {
+                if(j != 0) {
+                    if(j != selected) {
+                        menyer[j].checked = false;
+                    }
+                }
+                
             }
         }
+        
     }
 })();
 
