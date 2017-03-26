@@ -10,13 +10,36 @@ body
     user-select: none;
 	outline: 0;
 }
+.nav-background-image
+{
+	display:flex;
+	background-image: url(/res/image/bibliotekRsten.png);
+	background-size: cover;
+	min-height: 15vw;
+}
+.nav-spacer
+{
+	display: none;
+	min-height: 3rem;
+}
+.nav-fixed
+{
+	position: fixed;
+	width: 100%;
+	top: 0;
+}
+.nav-static
+{
+	position: static;
+}
 .nav-igation
 {
-	display: block;
+	display: flex;
 	background: #9c1c25;
 }
 .nav-container
 {
+	width: 100%;
 	max-width: 70rem;
 	margin: 0 auto;
 }

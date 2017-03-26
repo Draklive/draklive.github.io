@@ -19,6 +19,8 @@
 		<link rel="stylesheet" type="text/css" href="/res/style/content.css">
     </head>
     <body>
+		<div class="nav-background-image"></div>
+		<div class="nav-spacer"></div>
 		<nav class="nav-igation">
 			<div class="nav-container">
 				<div class="nav-header">
@@ -147,6 +149,7 @@
 				</ul>
 			</div>
 		</nav>
+
 		<div class="con-container">
 			<div class="con-page">
 				<div class="con-display-area">
@@ -156,6 +159,7 @@
 				</div>
 			</div>
 		</div>
+
 		<footer class="foo-ter">
 			<div class="foo-container">
 				<div class="foo-name-social-bar">
@@ -188,6 +192,7 @@
 				</address>
 			</div>
 		</footer>
+
 		<script src="/res/script/navigation.js"></script>
     </body>
 </html>

@@ -11,3 +11,24 @@
         }
     }
 })();
+
+if(document.body.clientWidth > 700) {
+    document.addEventListener('scroll', pageScroll, false);
+}
+
+function pageScroll()
+{
+	var percent = document.body.scrollTop/document.body.clientWidth;
+	if (percent > 0.15)
+	{
+		document.getElementsByClassName("nav-igation")[0].classList.remove("nav-static");
+		document.getElementsByClassName("nav-igation")[0].classList.add("nav-fixed");
+        document.getElementsByClassName("nav-spacer")[0].style.display = "flex";
+	}
+	else
+	{
+		document.getElementsByClassName("nav-igation")[0].classList.remove("nav-fixed");
+        document.getElementsByClassName("nav-igation")[0].classList.add("nav-static");
+        document.getElementsByClassName("nav-spacer")[0].style.display = "none";
+	}
+}
