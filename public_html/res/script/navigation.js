@@ -1,4 +1,4 @@
-(function handleDropdown() {
+function handleDropdown() {
     var menyer = document.getElementsByClassName('nav-list-check');
     for(var i = 0; i < menyer.length; i++) {
         menyer[i].addEventListener('change', function(){closeOthers(this.index)}.bind({index:i}), false);
@@ -16,11 +16,8 @@
         }
         
     }
-})();
-
-if(document.body.clientWidth > 700) {
-    document.addEventListener('scroll', pageScroll, false);
 }
+handleDropdown();
 
 function pageScroll()
 {
@@ -40,7 +37,12 @@ function pageScroll()
 }
 
 function updateHeight() {
-    document.getElementsByClassName("nav-spacer")[0].style.height = document.getElementsByClassName("nav-igation")[0].clientHeight;
+    document.getElementsByClassName("nav-spacer")[0].style.height = document.getElementsByClassName("nav-igation")[0].clientHeight + 'px';
 }
 
-window.addEventListener('resize', updateHeight, false);
+if(document.body.clientWidth > 800) {
+    document.addEventListener('scroll', pageScroll, false);
+    window.addEventListener('resize', updateHeight, false);
+    pageScroll();
+    updateHeight();
+}

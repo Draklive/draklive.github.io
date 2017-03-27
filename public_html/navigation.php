@@ -24,7 +24,7 @@
 		<nav class="nav-igation">
 			<div class="nav-container">
 				<div class="nav-header">
-					<a class="nav-home-button" href="/hem"><image class="nav-logo" src="/res/image/logga-white.png"></image><h1 class="nav-logo-text">Rosendalsgymnasiet</h1></a>
+					<a class="nav-home-button" href="/hem"><image class="nav-logo" src="/res/image/logga-white.png"></image><span class="nav-logo-text">Rosendalsgymnasiet</span></a>
 					<label class="nav-main-list-button" for="nav-list-check-0">
 						<div style="width:80%; height:100%; margin: 0 auto;">
 							<div style="height:10%;"></div>
