@@ -1,7 +1,7 @@
 body
 {
 	background-color:#f5f5f5;
-	min-width: 24rem;
+	min-width: 22rem;
 	font-size: 1rem;
 	margin: 0;
 }
@@ -35,18 +35,23 @@ body
 .nav-igation
 {
 	display: flex;
+	justify-content: center;
 	background: #9c1c25;
 }
 .nav-container
 {
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	max-width: 70rem;
-	margin: 0 auto;
+	overflow: visible;
 }
 .nav-header
 {
-	display: block;
-	overflow: auto;
+	display: flex;
+	flex-grow: 1;
+	justify-content: space-between;
 }
 .nav-logo
 {
@@ -78,8 +83,7 @@ body
 }
 .nav-main-list-button
 {
-	display: block;
-	float: right;
+	display: flex;
 	padding:0.5rem;
 	border-radius: 0.5rem;
 	height: 2rem;
@@ -105,6 +109,7 @@ input[type=checkbox]:checked ~ .nav-main-list
 .nav-main-list
 {
 	display: none;
+	flex-grow: 1;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -239,24 +244,17 @@ input[type=checkbox]:checked ~ .nav-list
 	-ms-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 }
-@media only screen and (min-width: 69rem)
+@media only screen and (min-width: 50rem)
 {
-	.nav-igation
-	{
-		height:3rem;
-	}
-	.nav-header
-	{
-		float:left;
-	}
 	.nav-main-list-button
 	{
 		display: none;
 	}
 	.nav-main-list
 	{
-		display: block;
-		float: right;
+		display: flex;
+		flex-grow: 1;
+		justify-content: center;
 	}
 	.nav-main-item
 	{

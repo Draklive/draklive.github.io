@@ -38,3 +38,9 @@ function pageScroll()
         document.getElementsByClassName("nav-spacer")[0].style.display = "none";
 	}
 }
+
+function updateHeight() {
+    document.getElementsByClassName("nav-spacer")[0].style.height = document.getElementsByClassName("nav-igation")[0].clientHeight;
+}
+
+window.addEventListener('resize', updateHeight, false);

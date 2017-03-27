@@ -12,7 +12,7 @@
     <head>
 		<meta charset="UTF-8">
         <title>Rosendalsgymnasiet</title>
-		<meta id="the-viewport" name="viewport" content="width=device-width, initial-scale=0.9">
+		<meta id="the-viewport" name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="/res/image/favicon.png">
 		<link rel="stylesheet" type="text/css" href="/res/style/navigation.css">
 		<link rel="stylesheet" type="text/css" href="/res/style/footer.css">
