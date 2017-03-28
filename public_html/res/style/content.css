@@ -1,36 +1,89 @@
 .con-container
 {
-	max-width: 70rem;
-	margin: 0 auto;
+	background: white;
+	overflow: auto;
 }
 .con-page
 {
-	margin:1rem;
-	background: #ffffff;
-	min-height: 50rem;
+	background: transparent;
 }
 .con-display-area
 {
-	padding: 1rem;
+	background: transparent;
 }
+section
+{
+	overflow: auto;
+	font-size: 0.8rem;
+	font-family: "Times New Roman", Georgia, Serif;
+	padding: 2rem;
+	position: relative;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-size: cover;
+	background-position: center;
+}
+
+.great-text
+{
+	font-size: 1rem;
+}
+@media only screen and (min-width: 50rem)
+{
+	section
+	{
+		font-size: 1.1rem;
+	}
+	.great-text
+	{
+		font-size: 1.5rem;
+	}
+}
+
+
 
 h2
 {
-	font-size: 2.5rem;
-	margin-top: 0.2rem;
-	margin-bottom: 0.1rem;
+	font-size: 2.5em;
+	margin-top: 0.2em;
+	margin-bottom: 0.1em;
 	overflow-wrap: break-word;
 }
 h3
 {
-	font-size: 1.5rem;
-	margin-bottom: 0.1rem;
+	font-size: 1.5em;
+	margin-bottom: 0.1em;
 	overflow-wrap: break-word;
 }
 p
 {
-	font-size: 1.2rem;	
-	margin-top: 0.2rem;
-	margin-bottom: 2rem;
+	font-size: 1.2em;	
+	margin-top: 0.2em;
+	margin-bottom: 2em;
 	overflow-wrap: break-word;
+}
+
+.middle
+{
+	max-width: 50rem;
+	margin:0 auto;
+}
+.center-X
+{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.center-Y
+{
+	display: flex;
+	align-items: center;
+}
+
+.outline
+{
+	text-shadow: -2px 0 gray, 0 2px gray, 2px 0 gray, 0 -2px gray;
 }

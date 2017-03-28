@@ -4,7 +4,6 @@ body
 	min-width: 20rem;
 	font-size: 1rem;
 	margin: 0;
-	font-family: "Times New Roman";
 }
 [class|=nav]
 {
@@ -14,8 +13,9 @@ body
 .nav-background-image
 {
 	display:flex;
-	background-image: url(/res/image/bibliotekRsten.png);
+	background-image: url(/res/image/framsida.jpg);
 	background-size: cover;
+	background-position: 50% 36%;
 	min-height: 15vw;
 }
 .nav-body
@@ -41,6 +41,7 @@ body
 .nav-igation
 {
 	display: flex;
+	z-index: 80;
 	padding: 0rem;
 	justify-content: center;
 	background: #9c1c25;
@@ -175,6 +176,7 @@ input[type=checkbox]:checked ~ .nav-list
 .nav-list
 {
 	display: none;
+	z-index: 100;
 	font-size: 1.2rem;
 	list-style-type: none;
 	padding: 0;
