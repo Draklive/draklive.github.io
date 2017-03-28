@@ -20,8 +20,9 @@
     </head>
     <body>
 		<div class="nav-background-image"></div>
+		<div class="nav-body">
 		<div class="nav-spacer"></div>
-		<nav class="nav-igation">
+		<div class="nav-igation">
 			<div class="nav-container">
 				<div class="nav-header">
 					<a class="nav-home-button" href="/hem"><image class="nav-logo" src="/res/image/logga-white.png"></image><span class="nav-logo-text">Rosendalsgymnasiet</span></a>
@@ -128,27 +129,13 @@
 
 					<li class="nav-main-item">
 					<input class="nav-list-check" type="checkbox" id="nav-list-check-5"></input>
-					<a class="nav-main-item-button" href="http://rosnet.rosendalsgymnasiet.se"><div class="nav-main-text">Rosnet</div>
-						<label class="nav-list-button" for="nav-list-check-5">
-							<div class="nav-arrow-spacer"></div>
-							<div class="nav-arrow-container">
-								<div class="nav-arrow-TL"></div>
-								<div class="nav-arrow-TR"></div>
-								<div class="nav-arrow-BL"></div>
-								<div class="nav-arrow-BR"></div>
-							</div>
-						</label>
-					</a>
-					
-					<ul class="nav-list">
-						<li class="nav-item"><a class="nav-item-button" href="https://duckduckgo.com/?q=ΔλΩ+page+1&t=hd&ia=web">ΔλΩ page 1</a></li>
-						<li class="nav-item"><a class="nav-item-button" href="https://duckduckgo.com/?q=ΔλΩ+page+2&t=hd&ia=web">ΔλΩ page 2</a></li>
-					</ul>
+					<a class="nav-main-item-button" href="http://rosnet.rosendalsgymnasiet.se"><div class="nav-main-text">Rosnet</div></a>
 					</li>
 					
 				</ul>
 			</div>
-		</nav>
+		</div>
+		</div>
 
 		<div class="con-container">
 			<div class="con-page">
