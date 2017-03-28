@@ -128,8 +128,7 @@
 					</li>
 
 					<li class="nav-main-item">
-					<input class="nav-list-check" type="checkbox" id="nav-list-check-5"></input>
-					<a class="nav-main-item-button" href="http://rosnet.rosendalsgymnasiet.se"><div class="nav-main-text">Rosnet</div></a>
+						<a class="nav-main-item-button" href="http://rosnet.rosendalsgymnasiet.se"><div class="nav-main-text">Rosnet</div><div class="nav-list-button-spacer"></div></a>
 					</li>
 					
 				</ul>
@@ -180,6 +179,6 @@
 			</div>
 		</footer>
 
-		<script src="/res/script/navigation.js"></script>
+		<script type="text/javascript" src="/res/script/navigation.js"></script>
     </body>
 </html>

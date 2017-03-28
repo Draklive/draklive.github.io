@@ -21,7 +21,9 @@ handleDropdown();
 
 function pageScroll()
 {
-	var percent = document.body.scrollTop/document.body.clientWidth;
+    var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+    var height = window.pageXOffset || document.documentElement.clientWidth || document.body.clientWidth;
+	var percent = scroll/height;
 	if (percent > 0.15)
 	{
 		document.getElementsByClassName("nav-igation")[0].classList.remove("nav-static");

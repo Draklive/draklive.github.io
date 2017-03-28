@@ -122,6 +122,7 @@ input[type=checkbox]:checked ~ .nav-main-list
 {
 	display: none;
 	flex-grow: 1;
+	justify-content: center;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -147,6 +148,14 @@ input[type=checkbox]:checked ~ .nav-main-list
 	float:right;
 	padding:0.75rem;
 	border-radius: 0.5rem;
+	height: 1.5rem;
+	width: 1.5rem;
+}
+.nav-list-button-spacer
+{
+	display: block;
+	padding:0.75rem;
+	float:right;
 	height: 1.5rem;
 	width: 1.5rem;
 }
@@ -258,6 +267,10 @@ input[type=checkbox]:checked ~ .nav-list
 }
 @media only screen and (min-width: 50rem)
 {
+	.nav-list-button-spacer
+	{
+		display: none;
+	}
 	.nav-igation
 	{
 		padding: 1rem;
